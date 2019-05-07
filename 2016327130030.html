@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>跳动的气球</title>
+    <style type="text/css">
+        img{
+            display: inline-block;
+        }
+        .goods{
+            width: 50%;/*永远保证在中间位置*/
+            text-align: center;
+            /*background: magenta;*/
+            margin: 50px auto;
+        }
+        .goods img{
+            animation: jump 2s infinite;
+        }
+        @keyframes jump{
+            0%{
+                transform: translate(0px,0px);
+            }
+            50%{
+                transform: translate(0px,-30px);/*往Y轴方向跳动*/
+            }
+            100%{
+                transform: translate(0px,0px);
+            }
+        }
+        .circular{
+            width:300px;
+            height:50px;
+            margin: 50px auto;
+            position: relative;
+             margin-top: -2px;
+            /* margin-left: 170px;  */
+            border-radius:50%;
+            background: dodgerblue;
+            box-shadow: 0px 9px 0px rgba(144,144,144,1), 0px 9px 25px rgba(0,0,0,.7);/*阴影*/
+ 
+        }
+    </style>
+</head>
+<body>
+    <div class="goods">
+        <img src="200.jpg" alt="" width="200" height="220">
+        <div class="circular"></div>
+    </div>
+</body>
+</html>
